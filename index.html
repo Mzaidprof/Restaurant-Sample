@@ -1,114 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Restaurant</title>
-  <link rel="icon" type="image/png" href="assets/icon.png" />
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
-<body>
-  <!-- Navbar -->
-  <div class="navbar">
-    <div class="title">
-      <h3>Foodaurent</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Restaurant</title>
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="title">
+        <h3>Foodaurent</h3>
+      </div>
+      <ul>
+        <li class="nav_icon">
+          <a href="/"
+            ><i class="fa-solid fa-tents"></i
+            ><span style="margin-left: 5px"></span>Home</a
+          >
+        </li>
+        <li class="nav_icon">
+          <a href="#cakes"
+            ><i class="fa-solid fa-cake-candles"></i
+            ><span style="margin-left: 5px"></span>Sweet</a
+          >
+        </li>
+        <li class="nav_icon">
+          <a href="#spicy"
+            ><i class="fa-solid fa-pepper-hot"></i
+            ><span style="margin-left: 5px"></span>Spicy</a
+          >
+        </li>
+        <li class="nav_icon">
+          <button class="order">
+            <a href="#"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span style="margin-left: 5px"></span>Order</a
+            >
+          </button>
+        </li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li class="nav_icon"><a href="#cakes" ><i class="fa-solid fa-cake-candles"></i><span style="margin-left: 5px;"></span>Sweet</a></li>
-      <li class="nav_icon"><a href="#"><i class="fa-solid fa-pepper-hot"></i><span style="margin-left: 5px;"></span>Spicy</a></li>
-      <li><button class="order"><a href="#">Order</a></button></li>
-    </ul>
-  </div>
-  <!-- Hero -->
-  <div class="hero" id="cakes">
-    <h1>SweetCakes</h1>
-    <div class="img-container">
-      <div class="solid"></div>
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img
-              src="assets/cake 1.jpg"
-              alt="cake 1"
-              width="1920"
-              height="1080"
-            />
+    <!-- Cake -->
+    <div class="hero" id="cakes">
+      <h1>SweetCakes</h1>
+      <div class="img-container">
+        <div class="solid"></div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="assets/cake 1.jpg"
+                alt="cake 1"
+                width="1920"
+                height="1080"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/cake 2.jpg"
+                alt="cake 2"
+                width="1920"
+                height="1080"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/cake 3.jpg"
+                alt="cake 3"
+                width="1920"
+                height="1080"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/cake 4.jpg"
+                alt="cake 4"
+                width="1920"
+                height="1080"
+              />
+            </div>
+            <!-- Add more slides as needed -->
           </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/cake 2.jpg"
-              alt="cake 2"
-              width="1920"
-              height="1080"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/cake 3.jpg"
-              alt="cake 3"
-              width="1920"
-              height="1080"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="assets/cake 4.jpg"
-              alt="cake 4"
-              width="1920"
-              height="1080"
-            />
-          </div>
-          <!-- Add more slides as needed -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".swiper-container", {
-      // Optional parameters
-      direction: "vertical",
-      loop: true,
-      speed: 1000, // Set the speed to 1 second (1000 ms)
-      autoplay: {
-        delay: 3000, // Delay between transitions in milliseconds (ms)
-        disableOnInteraction: false, // Enable autoplay even if user interacts with Swiper
-      },
+    <!-- Spicy -->
+    <div class="spicy" id="spicy">
+      <div class="swiper-container2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/spicy 1.jpg" alt="spicy 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 2.jpg" alt="cake 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 3.jpg" alt="cake 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 4.jpg" alt="cake 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 5.jpg" alt="cake 5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 6.jpg" alt="cake 6" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/spicy 7.jpg" alt="cake 7" />
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+        speed: 1000, // Set the speed to 1 second (1000 ms)
+        autoplay: {
+          delay: 3000, // Delay between transitions in milliseconds (ms)
+          disableOnInteraction: false, // Enable autoplay even if user interacts with Swiper
+        },
 
-      // If we need pagination
-      pagination: {
-        el: ".swiper-pagination",
-      },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: ".swiper-scrollbar",
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      const swiper2 = new Swiper('.swiper-container2', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: 'cube',
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
       },
-    });
-  </script>
-  <script src="script.js"></script>
-</body>
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
